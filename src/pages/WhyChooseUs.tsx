@@ -1,4 +1,3 @@
-import React from 'react';
 import { Award, Cpu, Users, Shield, BookOpen, TrendingUp } from 'lucide-react';
 export const WhyChooseUs = () => {
   const reasons = [{

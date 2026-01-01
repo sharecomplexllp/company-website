@@ -1,13 +1,9 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
 import { ChevronRight } from 'lucide-react';
 export const Home = () => {
   return <div className="min-h-screen flex items-center pt-20 pb-16">
       <div className="container mx-auto px-4 md:px-6">
         <div className="max-w-4xl mx-auto text-center">
-          <div className="mb-10 flex justify-center">
-            <img src="/logo.jpg" alt="ShareComplex LLP" className="h-40 md:h-52 animate-fade-in shadow-2xl rounded-lg border-4 border-brand-blue/20" />
-          </div>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-brand-blue mb-6 leading-tight animate-slide-up">
             Empowering Investors Through Technology & Expertise
           </h1>
