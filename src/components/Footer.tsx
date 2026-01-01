@@ -112,10 +112,6 @@ export const Footer = () => {
             </div>
           </div>
         </div>
-
-        <div className="border-t border-gray-700 mt-8 pt-8 text-center">
-          <p>© 2025 ShareComplex LLP. All Rights Reserved.</p>
-        </div>
       </div>
     </footer>;
 };
