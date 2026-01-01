@@ -1,4 +1,3 @@
-import React from 'react';
 import { TrendingUp, DollarSign, BarChart2, Code, Building } from 'lucide-react';
 export const Services = () => {
   const services = [{

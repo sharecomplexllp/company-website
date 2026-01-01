@@ -1,4 +1,3 @@
-import React from 'react';
 import { CheckCircle, ExternalLink } from 'lucide-react';
 export const AxisFranchise = () => {
   const services = ['3-in-1 Trading & Demat Accounts (Banking + Demat + Trading)', 'Multi-Asset Trading (Equities, Derivatives, Commodities, Currencies)', 'Investment Products (Mutual Funds, IPOs, ETFs, Bonds, NCDs)', 'Portfolio Management & Research Advisory', 'Digital Infrastructure (Web, Mobile, and Desktop Trading Platforms)', '24/7 Dedicated Support & Relationship Management'];
@@ -26,7 +25,7 @@ export const AxisFranchise = () => {
                   </li>)}
               </ul>
 
-              <a href="#" className="inline-flex items-center text-brand-blue hover:text-brand-green font-medium text-lg transition-colors">
+              <a href="https://digitalaccount.axisdirect.in/register?Segment=1&SLB=Y&LGCode=BABHIMAJIANI&LCCode=BABHIMAJIANI&ReferralCode=BABHIMAJIANI&PromoCode=BABHIMAJIANI&productId=89&utm_campaign=Assisted%20link&utm_device=Android&affiliate_name=ASL" className="inline-flex items-center text-brand-blue hover:text-brand-green font-medium text-lg transition-colors">
                 Visit Axis Direct Franchise Portal
                 <ExternalLink size={20} className="ml-2" />
               </a>
