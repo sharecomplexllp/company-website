@@ -1,4 +1,3 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
 import { ChevronRight, Linkedin } from 'lucide-react';
 export const Footer = () => {
@@ -97,7 +96,7 @@ export const Footer = () => {
             </p>
             <p className="mt-1">
               <a href="tel:+919099246666" className="hover:text-brand-light-blue transition-colors">
-                +91 90992 46666
+                +91 90 99 246666
               </a>
             </p>
             <div className="mt-4 flex space-x-4">
