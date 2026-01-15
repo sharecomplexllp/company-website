@@ -5,7 +5,9 @@ export const Footer = () => {
       <div className="container mx-auto px-4 md:px-6">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
-            <img src="/logo.jpg" alt="ShareComplex LLP" className="h-20 mb-4 bg-white p-3 rounded-lg shadow-md" />
+            <p className="mb-12">
+              ShareComplex LLP 
+            </p>
             <p className="mb-4">
               Specialized investment and trading firm operating across NSE, BSE,
               and MCX.
