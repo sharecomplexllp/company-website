@@ -6,6 +6,7 @@ export const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
             <p className="mb-12">
+               <ChevronRight size={16} className="mr-2" />
               ShareComplex LLP 
             </p>
             <p className="mb-4">
