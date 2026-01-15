@@ -1,4 +1,4 @@
-import React from 'react';
+//import React from 'react';
 import { MapPin, Mail, Phone, Linkedin, MessageCircle } from 'lucide-react';
 export const ContactSection = () => {
   return <section id="contact" className="py-16 md:py-24 bg-white">
@@ -39,8 +39,8 @@ export const ContactSection = () => {
 
                   <div className="flex items-center">
                     <Phone size={24} className="text-brand-blue mr-4 flex-shrink-0" />
-                    <a href="tel:+919099246666" className="hover:text-brand-blue transition-colors">
-                      +91 90992 46666
+                    <a href="tel:+916357271375" className="hover:text-brand-blue transition-colors">
+                      +91 63 57 271375
                     </a>
                   </div>
 
