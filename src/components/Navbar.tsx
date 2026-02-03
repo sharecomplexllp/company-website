@@ -44,8 +44,7 @@ export const Navbar = () => {
         >
           ShareComplex LLP
         </Link>
-
-        {/* DESKTOP NAV WITH GROWTH CHART BUTTONS - BALANCED SPACING */}
+          {/* DESKTOP NAV WITH GROWTH CHART BUTTONS - BALANCED SPACING */}
         <div className="hidden lg:flex items-center gap-4 xl:gap-6 flex-wrap justify-end">
           {navLinks.map(link => (
             <Link
