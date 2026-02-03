@@ -41,7 +41,7 @@ const testimonialsData: Testimonial[] = [
     role: "Dentist",
     company: "",
     text: "As a healthcare professional, I sought investment opportunities that offered both growth and security. The systematic portfolio management and risk assessment approach delivered exceptional results, demonstrating the effectiveness of professional trading strategies.",
-    image: "https://agi-prod-file-upload-public-main-use1.s3.amazonaws.com/ecc91f6a-89ec-40d3-9e07-042b02bf8a7c",
+    image: "/images/Siddhi_Didi.jpeg",
     rating: 0,
     returnPercentage: "16.34%"
   },
@@ -51,7 +51,7 @@ const testimonialsData: Testimonial[] = [
     role: "Business Owner",
     company: "",
     text: "Running a business requires smart capital allocation. The aggressive yet calculated investment strategy and market insights have given me the confidence to scale my business operations further with informed decision-making.",
-    image: "https://agi-prod-file-upload-public-main-use1.s3.amazonaws.com/b32fca53-a900-40d1-915f-fcad1d9e4c4d",
+    image: "/images/Pranav-Thakkar-Uncle.jpeg",
     rating: 0,
     returnPercentage: "28.92%"
   },

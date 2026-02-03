@@ -3,7 +3,14 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 /* DO NOT DELETE THESE TAILWIND IMPORTS, OTHERWISE THE STYLING WILL NOT RENDER AT ALL */
+
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+/* Prevent animation flash & overlap */
+* {
+  animation-fill-mode: forwards;
+}
+
 /* Custom styles */
 .scrollbar-hide::-webkit-scrollbar {
   display: none;
@@ -12,6 +19,7 @@
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
+
 /* Rising bar animations */
 @keyframes grow-bar {
   0% {
@@ -23,48 +31,210 @@
     opacity: 1;
   }
 }
-.animate-grow-bar-1 {
-  animation: grow-bar 3s ease-out infinite;
-  transform-origin: bottom;
-}
-.animate-grow-bar-2 {
-  animation: grow-bar 3s ease-out 0.2s infinite;
-  transform-origin: bottom;
-}
-.animate-grow-bar-3 {
-  animation: grow-bar 3s ease-out 0.4s infinite;
-  transform-origin: bottom;
-}
-.animate-grow-bar-4 {
-  animation: grow-bar 3s ease-out 0.6s infinite;
-  transform-origin: bottom;
-}
-.animate-grow-bar-5 {
-  animation: grow-bar 3s ease-out 0.8s infinite;
-  transform-origin: bottom;
-}
+.animate-grow-bar-1 { animation: grow-bar 3s ease-out infinite; transform-origin: bottom; }
+.animate-grow-bar-2 { animation: grow-bar 3s ease-out 0.2s infinite; transform-origin: bottom; }
+.animate-grow-bar-3 { animation: grow-bar 3s ease-out 0.4s infinite; transform-origin: bottom; }
+.animate-grow-bar-4 { animation: grow-bar 3s ease-out 0.6s infinite; transform-origin: bottom; }
+.animate-grow-bar-5 { animation: grow-bar 3s ease-out 0.8s infinite; transform-origin: bottom; }
+
 /* Page transition animations */
 @keyframes fade-in {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 @keyframes slide-up {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animate-fade-in { animation: fade-in 0.3s ease-out; }
+.animate-slide-up { animation: slide-up 0.6s ease-out; }
+
+/* ================================
+   SHARECOMPLEX BRAND ENHANCEMENTS
+================================ */
+
+.brand-grid-bg {
+  background-image:
+    linear-gradient(to right, rgba(0, 77, 113, 0.06) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 77, 113, 0.06) 1px, transparent 1px);
+  background-size: 48px 48px;
+}
+
+.brand-glow {
+  background: radial-gradient(
+    circle,
+    rgba(0, 77, 113, 0.15) 0%,
+    transparent 70%
+  );
+}
+
+/* ================================
+   🔥 NEW: ENHANCED LOGO ANIMATIONS
+================================ */
+
+/* Floating animation for logo layers */
+@keyframes float-gentle {
+  0%, 100% {
+    transform: translateY(0px) translateX(0px);
   }
-  to {
+  33% {
+    transform: translateY(-8px) translateX(4px);
+  }
+  66% {
+    transform: translateY(-4px) translateX(-3px);
+  }
+}
+
+/* Enhanced pulse with scale */
+@keyframes pulse-glow {
+  0%, 100% {
+    opacity: 0.6;
+    transform: scale(1);
+  }
+  50% {
     opacity: 1;
-    transform: translateY(0);
+    transform: scale(1.03);
   }
 }
-.animate-fade-in {
-  animation: fade-in 0.3s ease-out;
+
+/* Shimmer effect for buttons */
+@keyframes shimmer {
+  0% {
+    transform: translateX(-100%) skewX(-12deg);
+  }
+  100% {
+    transform: translateX(200%) skewX(-12deg);
+  }
 }
-.animate-slide-up {
-  animation: slide-up 0.6s ease-out;
+
+/* Gradient animation */
+@keyframes gradient-shift {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+/* Apply enhanced animations */
+.animate-float-gentle {
+  animation: float-gentle 8s ease-in-out infinite;
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 4s ease-in-out infinite;
+}
+
+.animate-shimmer {
+  animation: shimmer 2s ease-in-out;
+}
+
+.animate-gradient-shift {
+  animation: gradient-shift 6s ease infinite;
+  background-size: 200% 200%;
+}
+
+/* ================================
+   LOGO SHOWCASE EFFECTS
+================================ */
+
+/* Glass morphism effect */
+.glass-effect {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Premium glow effect */
+.logo-glow {
+  filter: drop-shadow(0 0 60px rgba(0, 77, 113, 0.3));
+}
+
+/* Hover enhancement for interactive elements */
+.hover-lift {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px -10px rgba(0, 77, 113, 0.3);
+}
+
+/* ================================
+   PERFORMANCE OPTIMIZATIONS
+================================ */
+
+/* GPU acceleration for smooth animations */
+.gpu-accelerated {
+  transform: translateZ(0);
+  will-change: transform;
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+/* Smooth font rendering */
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+/* ================================
+   RESPONSIVE ADJUSTMENTS
+================================ */
+
+@media (max-width: 768px) {
+  /* Gentler animations on mobile for performance */
+  @keyframes float-gentle {
+    0%, 100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-6px);
+    }
+  }
+  
+  /* Slightly reduce grid density on mobile */
+  .brand-grid-bg {
+    background-size: 36px 36px;
+  }
+}
+
+/* Reduce motion for users who prefer it */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* ================================
+   UTILITY CLASSES
+================================ */
+
+/* Gradient text */
+.gradient-text {
+  background: linear-gradient(135deg, #004d71 0%, #005580 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Premium border */
+.premium-border {
+  border: 1px solid rgba(0, 77, 113, 0.2);
+  box-shadow: 0 2px 8px rgba(0, 77, 113, 0.1);
+}
+
+/* Backdrop blur support */
+@supports (backdrop-filter: blur(10px)) or (-webkit-backdrop-filter: blur(10px)) {
+  .backdrop-blur-support {
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+  }
 }
